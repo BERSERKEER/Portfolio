@@ -1,0 +1,69 @@
+:root {
+  --color-background:          #031523;
+  --color-surface:             #031523;
+  --color-surface-dim:         #031523;
+  --color-surface-bright:      #2a3b4a;
+  --color-surface-container-lowest: #000f1d;
+  --color-surface-container-low:    #0c1d2b;
+  --color-surface-container:        #102130;
+  --color-surface-container-high:   #1b2b3a;
+  --color-surface-container-highest:#263646;
+  --color-surface-variant:     #263646;
+
+  --color-primary:             #adc6ff;
+  --color-primary-fixed:       #d8e2ff;
+  --color-primary-fixed-dim:   #adc6ff;
+  --color-primary-container:   #4d8eff;
+  --color-inverse-primary:     #005ac2;
+  --color-on-primary:          #002e6a;
+  --color-on-primary-fixed:    #001a42;
+  --color-on-primary-fixed-variant: #004395;
+  --color-on-primary-container:#00285d;
+
+  --color-secondary:           #bec6de;
+  --color-secondary-fixed:     #dae2fa;
+  --color-secondary-fixed-dim: #bec6de;
+  --color-secondary-container: #3e475a;
+  --color-on-secondary:        #283042;
+  --color-on-secondary-fixed:  #131c2d;
+  --color-on-secondary-fixed-variant: #3e475a;
+  --color-on-secondary-container: #acb5cc;
+
+  --color-tertiary:            #ffb786;
+  --color-tertiary-fixed:      #ffdcc6;
+  --color-tertiary-fixed-dim:  #ffb786;
+  --color-tertiary-container:  #df7412;
+  --color-on-tertiary:         #502400;
+  --color-on-tertiary-fixed:   #311400;
+  --color-on-tertiary-fixed-variant: #723600;
+  --color-on-tertiary-container: #461f00;
+
+  --color-error:               #ffb4ab;
+  --color-error-container:     #93000a;
+  --color-on-error:            #690005;
+  --color-on-error-container:  #ffdad6;
+
+  --color-on-surface:          #d3e4f8;
+  --color-on-surface-variant:  #c2c6d6;
+  --color-on-background:       #d3e4f8;
+  --color-outline:             #8c909f;
+  --color-outline-variant:     #424754;
+  --color-inverse-surface:     #d3e4f8;
+  --color-inverse-on-surface:  #223241;
+  --color-surface-tint:        #adc6ff;
+
+  /* Spacing */
+  --sp-xs:  4px;
+  --sp-sm:  8px;
+  --sp-md:  16px;
+  --sp-lg:  24px;
+  --sp-xl:  48px;
+  --sp-gutter: 24px;
+  --container-max: 1200px;
+
+  /* Border radius */
+  --radius:    2px;
+  --radius-lg: 4px;
+  --radius-xl: 8px;
+  --radius-full: 12px;
+}

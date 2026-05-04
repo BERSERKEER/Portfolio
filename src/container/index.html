@@ -19,10 +19,11 @@
             <div class="nav__logo font-grotesk">DevPortfolio.io</div>
 
             <ul class="nav__links font-grotesk">
-                <li><a href="#" class="active">Inicio</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#about" class="active">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#Skills">Habilidades</a></li>
+                <li><a href="#Services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -38,26 +39,20 @@
             </div>
 
             <div class="hero__content">
-
                 <!-- Left column -->
                 <div>
-                    <div class="hero__badge">
-                        <span class="hero__badge-dot"></span>
-                        <span class="hero__badge-text">Available for select projects</span>
-                    </div>
-
                     <h1 class="hero__title">
-                        Architecting <span class="accent">Performance-First</span> Frontend Ecosystems.
+                        Construyo <span class="accent">experiencias web rápidas</span> que la gente realmente disfruta.
                     </h1>
 
                     <p class="hero__description">
-                        I bridge the gap between complex engineering requirements and fluid user experiences.
-                        Specialized in high-scale React architectures and type-safe systems.
+                        Soy desarrollador frontend en Bogotá. Me enfoco en React, rendimiento y diseño funcional.
+                        Convierto ideas complejas en interfaces simples, rápidas y bien pensadas.
                     </p>
 
                     <div class="hero__buttons">
-                        <button class="btn-solid font-grotesk">Explore Systems</button>
-                        <button class="btn-outline font-grotesk">View Documentation</button>
+                        <button class="btn-solid font-grotesk">Ver mi trabajo</button>
+                        <button class="btn-outline font-grotesk">Sobre mí</button>
                     </div>
                 </div>
 
@@ -72,12 +67,12 @@
                         <span class="hero__code-filename">src/components/Identity.tsx</span>
                     </div>
                     <pre class="hero__code-block"><span class="code-keyword">const</span> <span class="code-secondary">Developer</span> = {
-  name: <span class="code-string">'Jordan Reese'</span>,
-  role: <span class="code-string">'Staff Frontend Engineer'</span>,
-  stack: [<span class="code-string">'React'</span>, <span class="code-string">'TS'</span>, <span class="code-string">'Node'</span>],
-  focus: <span class="code-string">'Scalability &amp; UX'</span>,
-  status: <span class="code-keyword">true</span>,
-  commit: () =&gt; <span class="code-secondary">"Excellence"</span>
+name: <span class="code-string">'Johan'</span>,
+role: <span class="code-string">'Frontend Developer'</span>,
+stack: [<span class="code-string">'React'</span>, <span class="code-string">'TypeScript'</span>, <span class="code-string">'Next.js'</span>],
+focus: <span class="code-string">'Performance &amp; UX'</span>,
+status: <span class="code-keyword">true</span>,
+commit: () =&gt; <span class="code-secondary">"Building from Bogotá 🇨🇴"</span>
 };
 
 <span class="code-comment">// Output: Ready to scale</span></pre>
@@ -85,57 +80,22 @@
 
             </div>
         </section>
-
         <!-- ══════════ About ══════════ -->
-        <section class="expertise">
+        <section id="about" class="expertise">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Technical Expertise</h2>
+                    <h2 class="section-title">Sobre mí</h2>
                     <div class="section-underline"></div>
                 </div>
 
                 <div class="bento-grid">
-
-                    <!-- Enterprise Architectures — wide -->
-                    <div class="bento-card bento-card--primary bento-card--wide">
-                        <div>
-                            <div class="bento-icon bento-icon--primary">
-                                <span class="material-symbols-outlined">layers</span>
-                            </div>
-                            <h3 class="bento-title">Enterprise Architectures</h3>
-                            <p class="bento-description">
-                                Design and implementation of complex micro-frontends and monorepo structures
-                                using Nx and Turborepo. Focused on modularity and tree-shaking.
-                            </p>
-                        </div>
-                        <div class="bento-tags">
-                            <span class="bento-tag">React 18</span>
-                            <span class="bento-tag">Next.js</span>
-                            <span class="bento-tag">Zustand</span>
-                        </div>
-                    </div>
-
-                    <!-- Core Vitals -->
-                    <div class="bento-card bento-card--tertiary">
-                        <div class="bento-icon bento-icon--tertiary">
-                            <span class="material-symbols-outlined">bolt</span>
-                        </div>
-                        <h3 class="bento-title">Core Vitals</h3>
+                    <div class="bento-card bento-card--primary">
+                        <h3 class="bento-title">Hola, soy Johan</h3>
                         <p class="bento-description">
-                            Optimization obsessive. Achieving 100/100 Lighthouse scores through aggressive
-                            caching, asset optimization, and edge computing.
-                        </p>
-                    </div>
-
-                    <!-- Type Systems -->
-                    <div class="bento-card bento-card--secondary">
-                        <div class="bento-icon bento-icon--secondary">
-                            <span class="material-symbols-outlined">verified_user</span>
-                        </div>
-                        <h3 class="bento-title">Type Systems</h3>
-                        <p class="bento-description">
-                            End-to-end type safety using TypeScript and GraphQL. Reducing runtime errors
-                            by 90% through rigorous schema definitions.
+                            Soy desarrollador frontend de 22 años en Bogotá. Me apasiona crear interfaces rápidas,
+                            claras y accesibles que conecten con las personas y resuelvan problemas reales.
+                            Trabajo principalmente con React y TypeScript, cuidando el rendimiento y la experiencia de
+                            usuario en cada detalle.
                         </p>
                     </div>
                 </div>
@@ -143,13 +103,13 @@
         </section>
 
         <!-- ══════════ PROJECTS ══════════ -->
-        <section class="projects">
+        <section id="projects" class="projects">
             <div class="container">
 
                 <div class="projects__header">
                     <div>
                         <h2 class="section-title">Proyectos</h2>
-                        <p class="projects__subtitle">Selected works focusing on system design and tooling.</p>
+                        <div class="section-underline"></div>
                     </div>
                 </div>
 
@@ -162,10 +122,6 @@
                                 alt="Data visualization dashboard showing complex line charts and real-time analytics in a dark interface" />
                         </div>
                         <div class="project-card__meta">
-                            <div class="project-card__label project-card__label--primary">
-                                <span class="material-symbols-outlined" style="font-size:18px;">terminal</span>
-                                0x01_ANALYTICS_OS
-                            </div>
                             <h3 class="project-card__title">Quantum Dashboard</h3>
                             <p class="project-card__description">
                                 A real-time data processing engine for financial analytics. Built with Web Workers
@@ -181,10 +137,6 @@
                     <!-- Project 2 -->
                     <div class="project-card project-card--tertiary project-card--reversed">
                         <div class="project-card__meta">
-                            <div class="project-card__label project-card__label--tertiary">
-                                <span class="material-symbols-outlined" style="font-size:18px;">package</span>
-                                0x02_CORE_UI
-                            </div>
                             <h3 class="project-card__title">Aether Design System</h3>
                             <p class="project-card__description">
                                 A headless UI library built on top of Radix UI and Tailwind CSS. Provides 40+
@@ -206,7 +158,7 @@
         </section>
 
         <!-- ══════════ SKILLS ══════════ -->
-        <section class="stats">
+        <section id="Skills" class="stats">
             <div class="container">
                 <div class="section-header" style="text-align: center;">
                     <h2 class="section-title">Tecnologías & Skills</h2>
@@ -214,19 +166,23 @@
                 </div>
                 <div class="stats__grid">
                     <div>
-                        <div class="stats__label" style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">HTML5</div>
+                        <div class="stats__label" style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">HTML5
+                        </div>
                         <div class="stats__label">Semántica & Accesibilidad</div>
                     </div>
                     <div>
-                        <div class="stats__label" style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">CSS3</div>
+                        <div class="stats__label" style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">CSS3
+                        </div>
                         <div class="stats__label">Flexbox, Grid & Animaciones</div>
                     </div>
                     <div>
-                        <div class="stats__label" style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">JavaScript</div>
+                        <div class="stats__label" style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">
+                            JavaScript</div>
                         <div class="stats__label">ES6+, DOM & Interactividad</div>
                     </div>
                     <div>
-                        <div class="stats__label" style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">React</div>
+                        <div class="stats__label" style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">React
+                        </div>
                         <div class="stats__label">Componentes & Hooks</div>
                     </div>
                 </div>
@@ -234,7 +190,7 @@
         </section>
 
         <!-- ══════════ Servicios ══════════ -->
-        <section class="philosophy">
+        <section id="Services" class="philosophy">
             <div class="container">
                 <div class="philosophy__grid">
 
@@ -245,10 +201,10 @@
                             <div class="philosophy__item">
                                 <div class="philosophy__number philosophy__number--primary">1</div>
                                 <div>
-                                    <div class="philosophy__item-title">Code is for Humans</div>
+                                    <div class="philosophy__item-title">Desarrollo Frontend</div>
                                     <p class="philosophy__item-description">
-                                        Code should be self-documenting and intuitive. I prioritize readability
-                                        and maintainability over clever "one-liners".
+                                        Desarrollo aplicaciones web modernas con React y TypeScript.
+                                        Interfaces rápidas, escalables y bien estructuradas desde cero.
                                     </p>
                                 </div>
                             </div>
@@ -256,10 +212,10 @@
                             <div class="philosophy__item">
                                 <div class="philosophy__number philosophy__number--tertiary">2</div>
                                 <div>
-                                    <div class="philosophy__item-title">Performance is a Feature</div>
+                                    <div class="philosophy__item-title">Optimización de rendimiento</div>
                                     <p class="philosophy__item-description">
-                                        Speed isn't a luxury. I treat low latency and smooth frame rates as
-                                        fundamental requirements of every feature.
+                                        Mejoro aplicaciones existentes haciéndolas más rápidas y fluidas.
+                                        Menos tiempo de carga, mejor experiencia para el usuario.
                                     </p>
                                 </div>
                             </div>
@@ -267,10 +223,10 @@
                             <div class="philosophy__item">
                                 <div class="philosophy__number philosophy__number--secondary">3</div>
                                 <div>
-                                    <div class="philosophy__item-title">Accessibility by Design</div>
+                                    <div class="philosophy__item-title">UI & UX funcional</div>
                                     <p class="philosophy__item-description">
-                                        Inclusive interfaces aren't an afterthought. I build with semantic HTML
-                                        and ARIA best practices from day one.
+                                        Diseño e implemento interfaces claras, intuitivas y fáciles de usar.
+                                        Enfocado en simplicidad y usabilidad real.
                                     </p>
                                 </div>
                             </div>
@@ -282,7 +238,7 @@
                         <div class="philosophy__image-glow"></div>
                         <div class="philosophy__image-card">
                             <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIMWtjjGPsonVeOT3MI7FBqziRGURETeuXWzc2vtKbho2sLA6K5IId5GeP8uwig2WRCzaNXsf6Ttyo5ycBfLqqlMgAv-X1jyD3zNx7ZRk5J-Vm2H4dF8H5pturUdOoPZUQODnHa8S5mWYzzC0yDC6pZPap9U9Ig4VEEt00WcY33QCjPRxCr5aulycC386BAdNbRTDzH2DPFR1C2wr3P19wZvqOkLc3pZoz-zYD8cGItXh-ogvNGgsqpHy5L3m8NzDarfYvQT_8Gw"
-                                alt="Extreme close-up of computer circuitry and glowing blue motherboard components reflecting light" />
+                                alt="Interfaz moderna y desarrollo frontend enfocado en rendimiento" />
                         </div>
                     </div>
 
@@ -291,7 +247,8 @@
         </section>
 
         <!-- ══════════ CONTACT FORM ══════════ -->
-        <section class="expertise" style="padding: 96px 0; background: var(--color-surface-container-low);">
+        <section id="contact" class="expertise"
+            style="padding: 96px 0; background: var(--color-surface-container-low);">
             <div class="container">
                 <div class="section-header" style="text-align: center;">
                     <h2 class="section-title">Ponte en Contacto</h2>
@@ -305,14 +262,29 @@
 
                     <form style="display: flex; flex-direction: column; gap: 16px;">
                         <div>
-                            <label style="display: block; color: var(--color-on-surface); font-weight: 600; margin-bottom: 8px; font-size: 14px;">Nombre</label>
-                            <input type="text" placeholder="Tu nombre" style="width: 100%; padding: 12px 16px; background: var(--color-surface-container); border: 1px solid var(--color-outline-variant); border-radius: var(--radius-lg); color: var(--color-on-surface); font-family: inherit; font-size: 16px; transition: border-color .2s;" onmouseover="this.style.borderColor='var(--color-primary)'" onmouseout="this.style.borderColor='var(--color-outline-variant)'" onfocus="this.style.borderColor='var(--color-primary)'" onblur="this.style.borderColor='var(--color-outline-variant)'" required>
+                            <label
+                                style="display: block; color: var(--color-on-surface); font-weight: 600; margin-bottom: 8px; font-size: 14px;">Nombre</label>
+                            <input type="text" placeholder="Tu nombre"
+                                style="width: 100%; padding: 12px 16px; background: var(--color-surface-container); border: 1px solid var(--color-outline-variant); border-radius: var(--radius-lg); color: var(--color-on-surface); font-family: inherit; font-size: 16px; transition: border-color .2s;"
+                                onmouseover="this.style.borderColor='var(--color-primary)'"
+                                onmouseout="this.style.borderColor='var(--color-outline-variant)'"
+                                onfocus="this.style.borderColor='var(--color-primary)'"
+                                onblur="this.style.borderColor='var(--color-outline-variant)'" required>
                         </div>
                         <div>
-                            <label style="display: block; color: var(--color-on-surface); font-weight: 600; margin-bottom: 8px; font-size: 14px;">Email</label>
-                            <input type="email" placeholder="tu@email.com" style="width: 100%; padding: 12px 16px; background: var(--color-surface-container); border: 1px solid var(--color-outline-variant); border-radius: var(--radius-lg); color: var(--color-on-surface); font-family: inherit; font-size: 16px; transition: border-color .2s;" onmouseover="this.style.borderColor='var(--color-primary)'" onmouseout="this.style.borderColor='var(--color-outline-variant)'" onfocus="this.style.borderColor='var(--color-primary)'" onblur="this.style.borderColor='var(--color-outline-variant)'" required>
+                            <label
+                                style="display: block; color: var(--color-on-surface); font-weight: 600; margin-bottom: 8px; font-size: 14px;">Email</label>
+                            <input type="email" placeholder="tu@email.com"
+                                style="width: 100%; padding: 12px 16px; background: var(--color-surface-container); border: 1px solid var(--color-outline-variant); border-radius: var(--radius-lg); color: var(--color-on-surface); font-family: inherit; font-size: 16px; transition: border-color .2s;"
+                                onmouseover="this.style.borderColor='var(--color-primary)'"
+                                onmouseout="this.style.borderColor='var(--color-outline-variant)'"
+                                onfocus="this.style.borderColor='var(--color-primary)'"
+                                onblur="this.style.borderColor='var(--color-outline-variant)'" required>
                         </div>
-                        <button type="submit" style="padding: 12px 24px; background: var(--color-primary); color: var(--color-on-primary); border: none; border-radius: var(--radius-lg); font-weight: 700; font-family: 'Space Grotesk', sans-serif; cursor: pointer; transition: opacity .2s; margin-top: 8px;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">Enviar Mensaje</button>
+                        <button type="submit"
+                            style="padding: 12px 24px; background: var(--color-primary); color: var(--color-on-primary); border: none; border-radius: var(--radius-lg); font-weight: 700; font-family: 'Space Grotesk', sans-serif; cursor: pointer; transition: opacity .2s; margin-top: 8px;"
+                            onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">Enviar
+                            Mensaje</button>
                     </form>
                 </div>
             </div>
@@ -324,18 +296,23 @@
     <footer class="footer">
         <div class="footer__inner">
             <div>
-                <div class="footer__brand">DevPortfolio.io</div>
-                <p class="footer__copy">© 2024 Built with Precision. Engineering-first mindset.</p>
+                <div class="footer__brand">TuNombre.dev</div>
+                <p class="footer__copy">© 2026 Frontend Developer en Bogotá. Construyendo interfaces rápidas y
+                    funcionales.</p>
             </div>
             <nav class="footer__links" aria-label="Footer links">
-                <a href="#" class="footer__link"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/github.svg" alt="GitHub" width="16" height="16"> GitHub</a>
-                <a href="#" class="footer__link"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/linkedin.svg" alt="LinkedIn" width="16" height="16"> LinkedIn</a>
-                <a href="#" class="footer__link"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/gmail.svg" alt="Gmail" width="16" height="16"> Gmail</a>
+                <a href="#" class="footer__link"><img
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/github.svg" alt="GitHub" width="16"
+                        height="16"> GitHub</a>
+                <a href="#" class="footer__link"><img
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/linkedin.svg" alt="LinkedIn" width="16"
+                        height="16"> LinkedIn</a>
+                <a href="#" class="footer__link"><img
+                        src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/gmail.svg" alt="Gmail" width="16"
+                        height="16"> Gmail</a>
             </nav>
         </div>
     </footer>
-
-    <script src="main.js"></script>
 </body>
 
 </html>

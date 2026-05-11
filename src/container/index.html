@@ -1,318 +1,378 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevPortfolio.io</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="/src/assets/css/styles.css" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/src/assets/css/styles.css">
 </head>
 
-<body>
-    <!-- Nav -->
-    <nav class="nav">
-        <div class="nav__inner">
-            <div class="nav__logo font-grotesk">DevPortfolio.io</div>
-
-            <ul class="nav__links font-grotesk">
-                <li><a href="#about" class="active">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#Skills">Habilidades</a></li>
-                <li><a href="#Services">Servicios</a></li>
-                <li><a href="#contact">Contacto</a></li>
+<body class="preload">
+    <!-- =========================
+       HEADER
+  ========================== -->
+    <header>
+        <nav class="navbar animate-on-load">
+            <div class="logo">
+                <span>Frontend Developer</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
+                <li><a href="#portafolio" class="nav-link">Portafolio</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li>
+                    <button class="theme-toggle icon-btn" type="button" aria-label="Cambiar modo de color">
+                        <img src="/src/assets/image/circle-half-stroke-solid-full.svg" alt="Icono">
+                    </button>
+                </li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <main style="padding-top:64px;">
+    <!-- =========================
+       HERO
+  ========================== -->
+    <section id="inicio">
 
-        <!-- ══════════ HERO ══════════ -->
-        <section class="hero">
-            <div class="hero__bg">
-                <div class="hero__bg-gradient"></div>
-                <div class="hero__glow-right"></div>
-                <div class="hero__glow-left"></div>
+        <div class="hero-container animate-on-load">
+
+            <p class="hero-subtitle">
+                Diseñando experiencias digitales modernas
+            </p>
+
+            <h1>
+                Frontend <br>
+                Developer
+            </h1>
+
+            <p class="hero-description">
+                Hola, soy Johan, tengo 23 años y soy de Bogotá. Trabajo en diseño y desarrollo web desde hace 3 años. Me apasiona innovar, modernizar interfaces y crear proyectos que conecten con el usuario.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#portafolio" class="btn-primary">
+                    Ver proyectos
+                </a>
+
+                <a href="#contacto" class="btn-secondary">
+                    Contacto
+                </a>
+
             </div>
 
-            <div class="hero__content">
-                <!-- Left column -->
-                <div>
-                    <h1 class="hero__title">
-                        Construyo <span class="accent">experiencias web rápidas</span> que la gente realmente disfruta.
-                    </h1>
+        </div>
 
-                    <p class="hero__description">
-                        Soy desarrollador frontend en Bogotá. Me enfoco en React, rendimiento y diseño funcional.
-                        Convierto ideas complejas en interfaces simples, rápidas y bien pensadas.
+    </section>
+
+    <!-- =========================
+       TECNOLOGÍAS
+  ========================== -->
+    <section id="tecnologias">
+
+        <div class="section-container animate-on-load">
+
+            <h2 class="section-title">
+                Tecnologías
+            </h2>
+
+            <div class="services-grid">
+
+                <article class="card">
+
+                    <h3>React & TypeScript</h3>
+
+                    <p>
+                        Construyo interfaces interactivas y bien tipadas
+                        con React y TypeScript.
                     </p>
 
-                    <div class="hero__buttons">
-                        <button class="btn-solid font-grotesk">Ver mi trabajo</button>
-                        <button class="btn-outline font-grotesk">Sobre mí</button>
-                    </div>
-                </div>
+                </article>
 
-                <!-- Right column — code card -->
-                <div class="hero__code-card">
-                    <div class="hero__code-header">
-                        <div class="hero__dots">
-                            <div class="hero__dot hero__dot--red"></div>
-                            <div class="hero__dot hero__dot--amber"></div>
-                            <div class="hero__dot hero__dot--green"></div>
-                        </div>
-                        <span class="hero__code-filename">src/components/Identity.tsx</span>
-                    </div>
-                    <pre class="hero__code-block"><span class="code-keyword">const</span> <span class="code-secondary">Developer</span> = {
-name: <span class="code-string">'Johan'</span>,
-role: <span class="code-string">'Frontend Developer'</span>,
-stack: [<span class="code-string">'React'</span>, <span class="code-string">'TypeScript'</span>, <span class="code-string">'Next.js'</span>],
-focus: <span class="code-string">'Performance &amp; UX'</span>,
-status: <span class="code-keyword">true</span>,
-commit: () =&gt; <span class="code-secondary">"Building from Bogotá 🇨🇴"</span>
-};
+                <article class="card">
 
-<span class="code-comment">// Output: Ready to scale</span></pre>
-                </div>
+                    <h3>CSS Moderno</h3>
+
+                    <p>
+                        Uso CSS Grid, Flexbox y animaciones para layouts
+                        limpios y responsivos.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>UX y Animaciones</h3>
+
+                    <p>
+                        Creo experiencias suaves que mejoran la percepción
+                        y el flujo de navegación.
+                    </p>
+
+                </article>
 
             </div>
-        </section>
-        <!-- ══════════ About ══════════ -->
-        <section id="about" class="expertise">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Sobre mí</h2>
-                    <div class="section-underline"></div>
-                </div>
 
-                <div class="bento-grid">
-                    <div class="bento-card bento-card--primary">
-                        <h3 class="bento-title">Hola, soy Johan</h3>
-                        <p class="bento-description">
-                            Soy desarrollador frontend de 22 años en Bogotá. Me apasiona crear interfaces rápidas,
-                            claras y accesibles que conecten con las personas y resuelvan problemas reales.
-                            Trabajo principalmente con React y TypeScript, cuidando el rendimiento y la experiencia de
-                            usuario en cada detalle.
+        </div>
+
+    </section>
+
+    <!-- =========================
+       PORTAFOLIO
+  ========================== -->
+    <section id="portafolio">
+
+        <div class="section-container">
+
+            <h2 class="section-title">
+                Portafolio
+            </h2>
+
+            <div class="portfolio-grid">
+
+                <article class="project-card">
+
+                    <div class="project-image"></div>
+
+                    <div class="project-content">
+
+                        <h3>Landing Page</h3>
+
+                        <p>
+                            Diseño moderno con animaciones y glassmorphism.
                         </p>
+
                     </div>
-                </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-image"></div>
+
+                    <div class="project-content">
+
+                        <h3>Dashboard UI</h3>
+
+                        <p>
+                            Panel administrativo responsive y minimalista.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-image"></div>
+
+                    <div class="project-content">
+
+                        <h3>E-commerce</h3>
+
+                        <p>
+                            Tienda online optimizada para UX/UI moderna.
+                        </p>
+
+                    </div>
+
+                </article>
+
             </div>
-        </section>
 
-        <!-- ══════════ PROJECTS ══════════ -->
-        <section id="projects" class="projects">
-            <div class="container">
-
-                <div class="projects__header">
-                    <div>
-                        <h2 class="section-title">Proyectos</h2>
-                        <div class="section-underline"></div>
-                    </div>
-                </div>
-
-                <div class="projects__list">
-
-                    <!-- Project 1 -->
-                    <div class="project-card project-card--primary">
-                        <div class="project-card__image-wrap">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYQQhdypCj6HlXDGXK82jUhBp7FyB_IF0RMMoJ0WrRewBJFXUcaB674vwwlLBRtasiewBv8a14QsPQ-Uy14ZU73hC4c2ZaYp0sdOJsIoE4plugJfDdntvYxe7AVYVKcGtSq5A2HiafUz5iws1Ix5YbwYL3eC1KQp1rF72uKFusWaAnKVluJu3pfvJHeOz1DGeiBQMaosAgxZQR8YaaB2ckVnsa_XTCvd6kUu7qtZ0-XIq7uVcz_EQqWpHEWtPsMyJjPnnSt1ZgUA"
-                                alt="Data visualization dashboard showing complex line charts and real-time analytics in a dark interface" />
-                        </div>
-                        <div class="project-card__meta">
-                            <h3 class="project-card__title">Quantum Dashboard</h3>
-                            <p class="project-card__description">
-                                A real-time data processing engine for financial analytics. Built with Web Workers
-                                for non-blocking UI and D3.js for high-density visualizations.
-                            </p>
-                            <div class="project-card__actions">
-                                <span class="material-symbols-outlined project-card__icon">link</span>
-                                <span class="material-symbols-outlined project-card__icon">code</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="project-card project-card--tertiary project-card--reversed">
-                        <div class="project-card__meta">
-                            <h3 class="project-card__title">Aether Design System</h3>
-                            <p class="project-card__description">
-                                A headless UI library built on top of Radix UI and Tailwind CSS. Provides 40+
-                                accessible components with built-in dark mode and theming support.
-                            </p>
-                            <div class="project-card__actions">
-                                <span class="material-symbols-outlined project-card__icon">link</span>
-                                <span class="material-symbols-outlined project-card__icon">code</span>
-                            </div>
-                        </div>
-                        <div class="project-card__image-wrap">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLTwcrEMzeHUbPDf4AE2mwgOmIdoxKdxih1NPT8LmfO6P6UMq44HeDKRLEiEZkRxtTh5dXf_jAoiXIPos8gcuDgoGfAlqSBBrgl4ZvhIcPO19J3TdNjKNwmAwjukDzOiF4632I8b-l4XLaTfPVjZW_0wO283WILLjMLSDARKpqvMhbed8M2HXxNXi_V4ZWhvzanhkehmnJgOoXqsqp8oaAu7crwkCBOH1QxFS-g87l-ZWep7y6buciEHlMeyROojDLIJ6RXnaGZw"
-                                alt="Modern dark UI design system components neatly arranged showing buttons, inputs, and toggles" />
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ══════════ SKILLS ══════════ -->
-        <section id="Skills" class="stats">
-            <div class="container">
-                <div class="section-header" style="text-align: center;">
-                    <h2 class="section-title">Tecnologías & Skills</h2>
-                    <div class="section-underline" style="margin-left: auto; margin-right: auto;"></div>
-                </div>
-                <div class="stats__grid">
-                    <div>
-                        <div class="stats__label" style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">HTML5
-                        </div>
-                        <div class="stats__label">Semántica & Accesibilidad</div>
-                    </div>
-                    <div>
-                        <div class="stats__label" style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">CSS3
-                        </div>
-                        <div class="stats__label">Flexbox, Grid & Animaciones</div>
-                    </div>
-                    <div>
-                        <div class="stats__label" style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">
-                            JavaScript</div>
-                        <div class="stats__label">ES6+, DOM & Interactividad</div>
-                    </div>
-                    <div>
-                        <div class="stats__label" style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">React
-                        </div>
-                        <div class="stats__label">Componentes & Hooks</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ══════════ Servicios ══════════ -->
-        <section id="Services" class="philosophy">
-            <div class="container">
-                <div class="philosophy__grid">
-
-                    <div>
-                        <h2 class="philosophy__title">Servicios</h2>
-                        <div class="philosophy__list">
-
-                            <div class="philosophy__item">
-                                <div class="philosophy__number philosophy__number--primary">1</div>
-                                <div>
-                                    <div class="philosophy__item-title">Desarrollo Frontend</div>
-                                    <p class="philosophy__item-description">
-                                        Desarrollo aplicaciones web modernas con React y TypeScript.
-                                        Interfaces rápidas, escalables y bien estructuradas desde cero.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="philosophy__item">
-                                <div class="philosophy__number philosophy__number--tertiary">2</div>
-                                <div>
-                                    <div class="philosophy__item-title">Optimización de rendimiento</div>
-                                    <p class="philosophy__item-description">
-                                        Mejoro aplicaciones existentes haciéndolas más rápidas y fluidas.
-                                        Menos tiempo de carga, mejor experiencia para el usuario.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="philosophy__item">
-                                <div class="philosophy__number philosophy__number--secondary">3</div>
-                                <div>
-                                    <div class="philosophy__item-title">UI & UX funcional</div>
-                                    <p class="philosophy__item-description">
-                                        Diseño e implemento interfaces claras, intuitivas y fáciles de usar.
-                                        Enfocado en simplicidad y usabilidad real.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="philosophy__image-wrap">
-                        <div class="philosophy__image-glow"></div>
-                        <div class="philosophy__image-card">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIMWtjjGPsonVeOT3MI7FBqziRGURETeuXWzc2vtKbho2sLA6K5IId5GeP8uwig2WRCzaNXsf6Ttyo5ycBfLqqlMgAv-X1jyD3zNx7ZRk5J-Vm2H4dF8H5pturUdOoPZUQODnHa8S5mWYzzC0yDC6pZPap9U9Ig4VEEt00WcY33QCjPRxCr5aulycC386BAdNbRTDzH2DPFR1C2wr3P19wZvqOkLc3pZoz-zYD8cGItXh-ogvNGgsqpHy5L3m8NzDarfYvQT_8Gw"
-                                alt="Interfaz moderna y desarrollo frontend enfocado en rendimiento" />
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ══════════ CONTACT FORM ══════════ -->
-        <section id="contact" class="expertise"
-            style="padding: 96px 0; background: var(--color-surface-container-low);">
-            <div class="container">
-                <div class="section-header" style="text-align: center;">
-                    <h2 class="section-title">Ponte en Contacto</h2>
-                    <div class="section-underline" style="margin: 16px auto 0 auto;"></div>
-                </div>
-
-                <div style="max-width: 600px; margin: 48px auto 0 auto;">
-                    <p style="text-align: center; color: var(--color-on-surface-variant); margin-bottom: 32px;">
-                        Déjame tus datos y me pondré en contacto pronto para hablar sobre tus proyectos.
-                    </p>
-
-                    <form style="display: flex; flex-direction: column; gap: 16px;">
-                        <div>
-                            <label
-                                style="display: block; color: var(--color-on-surface); font-weight: 600; margin-bottom: 8px; font-size: 14px;">Nombre</label>
-                            <input type="text" placeholder="Tu nombre"
-                                style="width: 100%; padding: 12px 16px; background: var(--color-surface-container); border: 1px solid var(--color-outline-variant); border-radius: var(--radius-lg); color: var(--color-on-surface); font-family: inherit; font-size: 16px; transition: border-color .2s;"
-                                onmouseover="this.style.borderColor='var(--color-primary)'"
-                                onmouseout="this.style.borderColor='var(--color-outline-variant)'"
-                                onfocus="this.style.borderColor='var(--color-primary)'"
-                                onblur="this.style.borderColor='var(--color-outline-variant)'" required>
-                        </div>
-                        <div>
-                            <label
-                                style="display: block; color: var(--color-on-surface); font-weight: 600; margin-bottom: 8px; font-size: 14px;">Email</label>
-                            <input type="email" placeholder="tu@email.com"
-                                style="width: 100%; padding: 12px 16px; background: var(--color-surface-container); border: 1px solid var(--color-outline-variant); border-radius: var(--radius-lg); color: var(--color-on-surface); font-family: inherit; font-size: 16px; transition: border-color .2s;"
-                                onmouseover="this.style.borderColor='var(--color-primary)'"
-                                onmouseout="this.style.borderColor='var(--color-outline-variant)'"
-                                onfocus="this.style.borderColor='var(--color-primary)'"
-                                onblur="this.style.borderColor='var(--color-outline-variant)'" required>
-                        </div>
-                        <button type="submit"
-                            style="padding: 12px 24px; background: var(--color-primary); color: var(--color-on-primary); border: none; border-radius: var(--radius-lg); font-weight: 700; font-family: 'Space Grotesk', sans-serif; cursor: pointer; transition: opacity .2s; margin-top: 8px;"
-                            onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">Enviar
-                            Mensaje</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- ══════════ FOOTER ══════════ -->
-    <footer class="footer">
-        <div class="footer__inner">
-            <div>
-                <div class="footer__brand">TuNombre.dev</div>
-                <p class="footer__copy">© 2026 Frontend Developer en Bogotá. Construyendo interfaces rápidas y
-                    funcionales.</p>
-            </div>
-            <nav class="footer__links" aria-label="Footer links">
-                <a href="#" class="footer__link"><img
-                        src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/github.svg" alt="GitHub" width="16"
-                        height="16"> GitHub</a>
-                <a href="#" class="footer__link"><img
-                        src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/linkedin.svg" alt="LinkedIn" width="16"
-                        height="16"> LinkedIn</a>
-                <a href="#" class="footer__link"><img
-                        src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/gmail.svg" alt="Gmail" width="16"
-                        height="16"> Gmail</a>
-            </nav>
         </div>
-    </footer>
+
+    </section>
+
+    <!-- =========================
+       CONTACTO
+  ========================== -->
+    <section id="contacto">
+
+        <div class="section-container">
+
+            <h2 class="section-title">
+                Contacto
+            </h2>
+
+            <p class="contact-text">
+                ¿Tienes un proyecto en mente?
+                Trabajemos juntos.
+            </p>
+
+            <a href="mailto:correo@portfolio.com" class="btn-primary">
+                Enviar mensaje
+            </a>
+
+        </div>
+
+    </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer>
+
+    <div class="footer-container">
+
+      <div class="footer-brand">
+
+        <h3>
+          Frontend Developer
+        </h3>
+
+        <p>
+
+          Diseñando experiencias web modernas,
+          minimalistas y enfocadas en UX/UI.
+
+        </p>
+
+      </div>
+
+      <div class="footer-links">
+
+        <h4>
+          Navegación
+        </h4>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Inicio
+            </a>
+          </li>
+
+          <li>
+            <a href="#overview">
+              Proyecto
+            </a>
+          </li>
+
+          <li>
+            <a href="#gallery">
+              Galería
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-social">
+
+        <h4>
+          Redes
+        </h4>
+
+        <ul>
+
+          <li>
+            <a href="#">
+              GitHub
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              LinkedIn
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              Behance
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 Frontend Portfolio
+      </p>
+
+    </div>
+
+  </footer>
+
+    <!-- =========================
+       SCRIPT
+  ========================== -->
+    <script>
+
+        const sections = document.querySelectorAll("section");
+
+        const logoText = document.querySelector(".logo span");
+
+        const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    const title =
+                        entry.target.querySelector("h1, h2");
+
+                    if (title) {
+                        logoText.textContent = title.textContent;
+                    }
+
+                }
+
+            });
+
+        }, {
+            threshold: 0.6
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const targetId = link.getAttribute('href').slice(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        const themeToggle = document.querySelector('.theme-toggle');
+        const root = document.body;
+
+        const applyTheme = (theme) => {
+            root.classList.toggle('light-mode', theme === 'light');
+            localStorage.setItem('theme', theme);
+        };
+
+        const storedTheme = localStorage.getItem('theme');
+        const initialTheme = storedTheme === 'light' ? 'light' : 'dark';
+        applyTheme(initialTheme);
+
+        document.body.classList.remove('preload');
+        document.body.classList.add('loaded');
+
+        themeToggle.addEventListener('click', () => {
+            const nextTheme = root.classList.contains('light-mode') ? 'dark' : 'light';
+            applyTheme(nextTheme);
+        });
+
+    </script>
+
 </body>
 
 </html>

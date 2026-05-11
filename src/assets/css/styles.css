@@ -1,5 +1,5 @@
-@import url('/src/assets/css/Normalizer.css');
-@import url('/src/assets/css/root.css');
+@import url('src/assets/css/Normalizer.css');
+@import url('src/assets/css/root.css');
 
 html {
   scroll-behavior: smooth;

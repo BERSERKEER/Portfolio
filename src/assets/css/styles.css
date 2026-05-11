@@ -1,5 +1,5 @@
-@import url('src/assets/css/Normalizer.css');
-@import url('src/assets/css/root.css');
+@import url('./Normalizer.css');
+@import url('./root.css');
 
 html {
   scroll-behavior: smooth;
@@ -74,7 +74,7 @@ header {
   border-radius:20px;
   backdrop-filter:blur(14px);
   background:var(--glass);
-  border:1px solid var(--border);
+  border:1px solid var(--glass-border);
 }
 
 
